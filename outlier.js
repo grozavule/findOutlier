@@ -11,15 +11,15 @@ Examples:
 */
 
 const findOutlier = numbers => {
-    let oddNumbers = numbers.filter(elem => elem % 2 === 0);
-    let evenNumbers = numbers.filter(elem => elem % 2 !== 0);
+    let evenNumbers = numbers.filter(elem => elem % 2 === 0);
+    let oddNumbers = numbers.filter(elem => elem % 2 !== 0);
     if(evenNumbers.length < oddNumbers.length)
     {
-        return evenNumbers.filter(elem => elem % 2 !== 0)[0];
+        return evenNumbers[0];
     }
     else
     {
-        return oddNumbers.filter(elem => elem % 2 === 0)[0];
+        return oddNumbers[0];
     }
 }
 
